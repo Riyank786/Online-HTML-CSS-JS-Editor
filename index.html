@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <title>Online HTML Editor</title>
+</head>
+
+<body>
+
+    <nav class="header">
+        <h3 class="codePlayer">Online HTML - Editor</h3>
+        <ul class="toggles" id="web-ul">
+            <li href="HTMLContainer" class="toggle selected" id="html">HTML</li>
+            <li href="CSSContainer" class="toggle" id="css">CSS</li>
+            <li href="JSContainer" class="toggle" id="js">JS</li>
+            <li href="RESULTContainer" class="toggle selected" id="result">Result</li>
+        </ul>
+        <button id="web-run" class="run" onclick="run()">Run</button>
+    </nav>
+
+    <nav class="header" id="mob-nav">
+        <ul class="toggles" id="mob-toggle">
+            <li href="HTMLContainer" class="toggle selected" id="html">HTML</li>
+            <li href="CSSContainer" class="toggle" id="css">CSS</li>
+            <li href="JSContainer" class="toggle" id="js">JS</li>
+            <li href="RESULTContainer" class="toggle" id="result" onclick="run()">Result</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="codeContainer" id="HTMLContainer">
+            <label for="htmlText">HTML</label>
+            <textarea name="htmlText" id="htmlText"  class="textBox" spellcheck="false" placeholder="Enter you HTML code here"></textarea>
+        </div>
+        <div class="codeContainer" id="CSSContainer">
+            <label for="cssText">CSS</label>
+            <textarea name="cssText" id="cssText" class="textBox" spellcheck="false" placeholder="Enter you CSS code here"></textarea>
+        </div>
+        <div class="codeContainer" id="JSContainer">
+            <label for="jsText">JS</label>
+            <textarea name="jsText" id="jsText" class="textBox" spellcheck="false" placeholder="Enter you JS code here"></textarea>
+        </div>
+
+        <div class="codeContainer" id="RESULTContainer">
+            <label for="resultA">Result</label>
+            <iframe></iframe>
+        </div>
+    </div>
+
+
+    <script src="jquery.js"></script>
+
+
+</body>
+
+</html>

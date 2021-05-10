@@ -1,0 +1,143 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1B1B32;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    background-color: #0A0A23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mob-nav{
+    display: none;
+}
+.codePlayer{
+    margin: 0 1rem;
+}
+
+.toggles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0%;
+    padding: 0%;
+}
+.toggles li{
+    list-style: none;
+    cursor: pointer;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem .5rem;
+    margin: .5rem 0;
+    border-radius: 2px;
+    font-size: medium;
+}
+
+.run{
+    margin: 0 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: green;
+    padding: 0.5rem 2rem;
+    font-size: medium;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.codeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 1rem;
+    position: relative;
+}
+
+.textBox{
+    width: 100%;
+    height: 80vh;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #2A2A40;
+    color: white;
+    margin-top: 10px;
+    padding-left: 0.5rem;
+    overflow: auto;
+    white-space: nowrap;
+    resize: none;
+    position:absolute;
+    top: 1.2rem;
+    left: 0;
+}
+
+iframe{
+    width: 100%;
+    height: 80vh;
+    margin-top: 10px;
+    background-color: #fff;
+    resize: both;
+}
+
+#CSSContainer, #JSContainer{
+    display: none;
+}
+
+.selected{
+    background-color: #2A2A40;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        padding: 0%;
+        margin: 0%;
+    }
+    .codePlayer{
+        margin: .5rem 1rem;
+    }
+    #web-ul{
+        display: none;
+    }
+    #web-run{
+        display: none;
+    }
+    #mob-nav{
+        display: flex;
+    }
+    #mob-toggle{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #RESULTContainer{
+        display: none;
+    }
+    label{
+        display: none;
+    }
+    #mob-run{
+        margin: 0%;
+        padding: 0.5rem 1rem;
+    }
+    iframe{
+        resize: none;
+    }
+    .textBox{
+        top: 0;
+        left: 0;
+    }
+}
