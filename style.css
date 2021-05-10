@@ -139,5 +139,6 @@ iframe{
     .textBox{
         top: 0;
         left: 0;
+        outline-width: 0px;
     }
 }
